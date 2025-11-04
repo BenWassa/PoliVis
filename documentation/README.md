@@ -73,7 +73,36 @@ npm run build
 
 The built files will be in the `dist/` directory, ready for deployment to any static hosting service.
 
-## 📱 Usage
+## � Troubleshooting
+
+### "Refused to apply style" or 404 errors when previewing index.html
+
+**Problem:** You're trying to preview the raw `index.html` file directly (e.g., with VS Code's Live Server).
+
+**Solution:** This HTML file is a Vite template that needs processing. Use the Vite dev server instead:
+
+```bash
+cd civic-lens
+npm run dev
+```
+
+Then visit http://localhost:3000/ in your browser.
+
+**Why this happens:** The raw HTML references built assets and expects React components to be injected by Vite.
+
+### Port 3000 already in use
+
+If you see "Port 3000 is already in use", either:
+- Stop the existing dev server (Ctrl+C)
+- Or run on a different port: `npm run dev -- --port 3001`
+
+### Build fails
+
+- Ensure Node.js v16+ is installed
+- Clear node_modules: `rm -rf node_modules && npm install`
+- Check for TypeScript errors: `npm run build`
+
+## �📱 Usage
 
 - **Browse Politicians:** Tap on any politician card to view detailed information
 - **Explore Parties:** See all politicians grouped by political party

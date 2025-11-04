@@ -1,74 +1,74 @@
 import { Party, Politician, KeyIssue } from './types';
 
-export const KEY_ISSUES_DATA: KeyIssue[] = [
+export const KEY_ISSUES: KeyIssue[] = [
   {
-    id: 'carbon-tax',
+    id: 1,
     title: 'Carbon Tax',
     description: 'Debate over carbon pricing mechanisms continues to be a central political issue under the new government.',
   },
   {
-    id: 'healthcare',
+    id: 2,
     title: 'Healthcare Expansion',
     description: 'Proposals to broaden public healthcare, including dental and pharmacare, and federal-provincial funding agreements.',
   },
   {
-    id: 'housing',
+    id: 3,
     title: 'Housing Affordability',
     description: 'Strategies to address the rising cost of housing by increasing supply and reducing municipal red tape.',
   },
   {
-    id: 'international-relations',
+    id: 4,
     title: 'International Relations',
     description: 'Focus on Canada\'s role on the global stage, including trade, diplomacy, and national sovereignty.',
   },
   {
-    id: 'quebec-sovereignty',
+    id: 5,
     title: 'Quebec Sovereignty',
     description: 'Advocacy for the protection of Quebec\'s culture, language, and political autonomy.',
   },
   {
-    id: 'environmental-policy',
+    id: 6,
     title: 'Environmental Policy',
     description: 'Comprehensive strategies for environmental protection, resource development, and meeting climate targets.',
   },
   {
-    id: 'fiscal-policy',
+    id: 7,
     title: 'Fiscal Policy',
     description: 'Management of government revenue, spending, and debt to influence the economy.',
   },
   {
-    id: 'indigenous-reconciliation',
+    id: 8,
     title: 'Indigenous Reconciliation',
     description: 'Actions to address the legacy of residential schools and advance the rights of Indigenous peoples.',
   },
   {
-    id: 'national-defence',
+    id: 9,
     title: 'National Defence',
     description: 'Policies concerning the Canadian Armed Forces, military spending, and national security.',
   },
-    {
-    id: 'energy-resources',
+  {
+    id: 10,
     title: 'Energy & Natural Resources',
     description: 'Policies on the development, regulation, and export of Canada\'s natural resources, including oil, gas, and renewables.',
   },
   {
-    id: 'debt-reduction',
+    id: 11,
     title: 'Debt Reduction',
     description: 'New government priority focusing on balancing the federal budget and controlling national debt.',
   },
   {
-    id: 'digital-sovereignty',
+    id: 12,
     title: 'Digital Sovereignty',
     description: 'Policies concerning data privacy, competition in the tech sector, and regulation of online content.',
   },
   {
-    id: 'supply-chain-resilience',
+    id: 13,
     title: 'Supply Chain Resilience',
     description: 'Strengthening domestic manufacturing and trade corridors to ensure economic stability.',
   },
 ];
 
-export const POLITICIANS_DATA: Politician[] = [
+export const POLITICIANS: Politician[] = [
   {
     id: 2,
     name: 'Pierre Poilievre',
@@ -87,13 +87,13 @@ export const POLITICIANS_DATA: Politician[] = [
       website: 'https://www.conservative.ca/',
       twitter: 'PierrePoilievre',
     },
-    keyIssues: ['fiscal-policy', 'housing', 'energy-resources', 'debt-reduction', 'carbon-tax'],
+    keyIssues: [7, 3, 10, 11, 1],
     relatedPoliticianIds: [6, 3, 4, 14, 12],
     career: [
-        { year: '2025-Present', role: 'Prime Minister of Canada', description: 'Leads the Government of Canada with a minority mandate.' },
-        { year: '2022-2025', role: 'Leader of the Conservative Party', description: 'Led the party to victory in the 2025 election.' },
-        { year: '2017-2022', role: 'Shadow Minister for Finance & Jobs', description: 'Served as a prominent critic of the government\'s economic policies.' },
-        { year: '2004-Present', role: 'Member of Parliament for Carleton', description: 'Represents his riding for over two decades.' },
+        { year: 2025, role: 'Prime Minister of Canada', description: 'Leads the Government of Canada with a minority mandate.' },
+        { year: 2022, role: 'Leader of the Conservative Party', description: 'Led the party to victory in the 2025 election.' },
+        { year: 2017, role: 'Shadow Minister for Finance & Jobs', description: 'Served as a prominent critic of the government\'s economic policies.' },
+        { year: 2004, role: 'Member of Parliament for Carleton', description: 'Represents his riding for over two decades.' },
     ],
     committeeMemberships: [
         { name: 'Cabinet', role: 'Chair' },
@@ -120,13 +120,13 @@ export const POLITICIANS_DATA: Politician[] = [
     socials: {
       twitter: 'cafreeland',
     },
-    keyIssues: ['fiscal-policy', 'healthcare', 'international-relations', 'environmental-policy'],
+    keyIssues: [7, 2, 4, 6],
     relatedPoliticianIds: [2, 1, 3, 4, 14],
     career: [
-      { year: '2025-Present', role: 'Leader of the Opposition & Interim Liberal Leader', description: 'Leads the Liberal Party in the House of Commons.' },
-      { year: '2020-2025', role: 'Minister of Finance', description: 'First woman to hold the position.' },
-      { year: '2019-2025', role: 'Deputy Prime Minister of Canada', description: 'Served as Prime Minister Trudeau\'s second-in-command.' },
-      { year: '2013-Present', role: 'Member of Parliament', description: 'Represents University—Rosedale.' },
+      { year: 2025, role: 'Leader of the Opposition & Interim Liberal Leader', description: 'Leads the Liberal Party in the House of Commons.' },
+      { year: 2020, role: 'Minister of Finance', description: 'First woman to hold the position.' },
+      { year: 2019, role: 'Deputy Prime Minister of Canada', description: 'Served as Prime Minister Trudeau\'s second-in-command.' },
+      { year: 2013, role: 'Member of Parliament', description: 'Represents University—Rosedale.' },
     ],
     committeeMemberships: [],
     notableQuotes: [
@@ -151,12 +151,12 @@ export const POLITICIANS_DATA: Politician[] = [
       website: 'https://www.ndp.ca/',
       twitter: 'theJagmeetSingh',
     },
-    keyIssues: ['healthcare', 'housing', 'fiscal-policy', 'indigenous-reconciliation'],
+    keyIssues: [2, 3, 7, 8],
     relatedPoliticianIds: [2, 6, 4, 14, 13],
     career: [
-        { year: '2017-Present', role: 'Leader of the New Democratic Party', description: 'Leads the federal NDP through multiple minority parliaments.' },
-        { year: '2019-Present', role: 'Member of Parliament for Burnaby South', description: 'Represents his riding in the House of Commons.' },
-        { year: '2011-2017', role: 'Member of Provincial Parliament (Ontario)', description: 'Served as Deputy Leader of the Ontario NDP.' },
+        { year: 2017, role: 'Leader of the New Democratic Party', description: 'Leads the federal NDP through multiple minority parliaments.' },
+        { year: 2019, role: 'Member of Parliament for Burnaby South', description: 'Represents his riding in the House of Commons.' },
+        { year: 2011, role: 'Member of Provincial Parliament (Ontario)', description: 'Served as Deputy Leader of the Ontario NDP.' },
     ],
     committeeMemberships: [],
     notableQuotes: [
@@ -180,11 +180,11 @@ export const POLITICIANS_DATA: Politician[] = [
     socials: {
       twitter: 'yfblanchet',
     },
-    keyIssues: ['quebec-sovereignty', 'international-relations', 'fiscal-policy'],
+    keyIssues: [5, 4, 7],
     relatedPoliticianIds: [2, 6, 3],
     career: [
-        { year: '2019-Present', role: 'Leader of the Bloc Québécois', description: 'Maintains a strong federal presence for the party.' },
-        { year: '2012-2014', role: 'Quebec Minister of Sustainable Development', description: 'Served in the provincial cabinet under Pauline Marois.' },
+        { year: 2019, role: 'Leader of the Bloc Québécois', description: 'Maintains a strong federal presence for the party.' },
+        { year: 2012, role: 'Quebec Minister of Sustainable Development', description: 'Served in the provincial cabinet under Pauline Marois.' },
     ],
     committeeMemberships: [],
     notableQuotes: [
@@ -205,12 +205,12 @@ export const POLITICIANS_DATA: Politician[] = [
         'Linking environmental action with social justice outcomes and reconciliation.',
     ],
     socials: { twitter: 'jonathanwp' },
-    keyIssues: ['environmental-policy', 'housing', 'fiscal-policy'],
+    keyIssues: [6, 3, 7],
     relatedPoliticianIds: [2, 6, 3, 4, 5],
     career: [
-      { year: '2025-Present', role: 'Leader of the Green Party of Canada', description: '' },
-      { year: '2022-2025', role: 'Co-Leader of the Green Party of Canada', description: '' },
-      { year: '2021-Present', role: 'Member of Parliament for Notre-Dame-de-Grâce—Westmount', description: '' },
+      { year: 2025, role: 'Leader of the Green Party of Canada', description: '' },
+      { year: 2022, role: 'Co-Leader of the Green Party of Canada', description: '' },
+      { year: 2021, role: 'Member of Parliament for Notre-Dame-de-Grâce—Westmount', description: '' },
     ],
     committeeMemberships: [],
     notableQuotes: []
@@ -233,12 +233,12 @@ export const POLITICIANS_DATA: Politician[] = [
       website: 'https://pm.gc.ca/en',
       twitter: 'JustinTrudeau',
     },
-    keyIssues: ['carbon-tax', 'healthcare', 'international-relations', 'indigenous-reconciliation'],
+    keyIssues: [1, 2, 4, 8],
     relatedPoliticianIds: [6],
     career: [
-      { year: '2015-2025', role: 'Prime Minister of Canada', description: 'Led the Government of Canada through multiple majority and minority terms.' },
-      { year: '2025-Present', role: 'Member of Parliament for Papineau', description: 'Continues to represent his Montreal riding.' },
-      { year: '2013-2015', role: 'Leader of the Liberal Party', description: 'Rebuilt the party and led it to a majority victory in the 2015 federal election.' },
+      { year: 2015, role: 'Prime Minister of Canada', description: 'Led the Government of Canada through multiple majority and minority terms.' },
+      { year: 2025, role: 'Member of Parliament for Papineau', description: 'Continues to represent his Montreal riding.' },
+      { year: 2013, role: 'Leader of the Liberal Party', description: 'Rebuilt the party and led it to a majority victory in the 2015 federal election.' },
     ],
     committeeMemberships: [],
     notableQuotes: [
@@ -260,12 +260,12 @@ export const POLITICIANS_DATA: Politician[] = [
       'Reviewing international agreements to ensure they benefit Canadians.',
     ],
     socials: { twitter: 'LeslynLewis' },
-    keyIssues: ['fiscal-policy', 'international-relations', 'digital-sovereignty'],
+    keyIssues: [7, 4, 12],
     relatedPoliticianIds: [2],
     career: [
-      { year: '2025-Present', role: 'Minister of Foreign Affairs', description: ''},
-      { year: '2021-Present', role: 'Member of Parliament for Haldimand—Norfolk', description: '' },
-      { year: '2020 & 2022', role: 'Conservative Leadership Candidate', description: 'Finished third in 2020 and 2022, showing strong grassroots support.' },
+      { year: 2025, role: 'Minister of Foreign Affairs', description: ''},
+      { year: 2021, role: 'Member of Parliament for Haldimand—Norfolk', description: '' },
+      { year: 2020, role: 'Conservative Leadership Candidate', description: 'Finished third in 2020 and 2022, showing strong grassroots support.' },
     ],
     committeeMemberships: [],
     notableQuotes: [
@@ -288,12 +288,12 @@ export const POLITICIANS_DATA: Politician[] = [
     socials: {
       twitter: 'ElizabethMay',
     },
-    keyIssues: ['carbon-tax', 'environmental-policy', 'healthcare', 'electoral-reform'],
+    keyIssues: [1, 6, 2],
     relatedPoliticianIds: [14],
     career: [
-        { year: '2022-2025', role: 'Co-Leader of the Green Party of Canada', description: 'Returned to a leadership role, sharing duties with Jonathan Wilkinson.' },
-        { year: '2011-Present', role: 'Member of Parliament for Saanich—Gulf Islands', description: 'The first Green Party MP ever elected in Canada.' },
-        { year: '2006-2019', role: 'Leader of the Green Party of Canada', description: 'Longest-serving female leader of a Canadian federal party.' },
+        { year: 2022, role: 'Co-Leader of the Green Party of Canada', description: 'Returned to a leadership role, sharing duties with Jonathan Wilkinson.' },
+        { year: 2011, role: 'Member of Parliament for Saanich—Gulf Islands', description: 'The first Green Party MP ever elected in Canada.' },
+        { year: 2006, role: 'Leader of the Green Party of Canada', description: 'Longest-serving female leader of a Canadian federal party.' },
     ],
     committeeMemberships: [
         { name: 'Standing Committee on Environment and Sustainable Development', role: 'Member' },
@@ -315,12 +315,12 @@ export const POLITICIANS_DATA: Politician[] = [
       'Advocates for a rules-based international order and human rights.',
     ],
     socials: { twitter: 'melaniejoly' },
-    keyIssues: ['international-relations', 'quebec-sovereignty', 'national-defence'],
+    keyIssues: [4, 5, 9],
     relatedPoliticianIds: [1, 6],
     career: [
-      { year: '2021-2025', role: 'Minister of Foreign Affairs', description: '' },
-      { year: '2019-2021', role: 'Minister of Economic Development and Official Languages', description: '' },
-      { year: '2015-Present', role: 'Member of Parliament for Ahuntsic-Cartierville', description: '' },
+      { year: 2021, role: 'Minister of Foreign Affairs', description: '' },
+      { year: 2019, role: 'Minister of Economic Development and Official Languages', description: '' },
+      { year: 2015, role: 'Member of Parliament for Ahuntsic-Cartierville', description: '' },
     ],
     committeeMemberships: [],
     notableQuotes: [
@@ -341,11 +341,11 @@ export const POLITICIANS_DATA: Politician[] = [
       'Acts as a key spokesperson for the NDP in Quebec.',
     ],
     socials: { twitter: 'boulerice' },
-    keyIssues: ['healthcare', 'fiscal-policy', 'environmental-policy', 'quebec-sovereignty'],
+    keyIssues: [2, 7, 6, 5],
     relatedPoliticianIds: [3],
     career: [
-      { year: '2011-Present', role: 'Member of Parliament for Rosemont—La Petite-Patrie', description: 'Part of the "Orange Wave" that swept Quebec in 2011.' },
-      { year: 'Present', role: 'Deputy Leader of the NDP', description: '' },
+      { year: 2011, role: 'Member of Parliament for Rosemont—La Petite-Patrie', description: 'Part of the "Orange Wave" that swept Quebec in 2011.' },
+      { year: 2025, role: 'Deputy Leader of the NDP', description: '' },
     ],
     committeeMemberships: [],
     notableQuotes: []
@@ -363,12 +363,12 @@ export const POLITICIANS_DATA: Politician[] = [
         'Focuses on national security and Canada\'s contributions to alliances like NATO.',
     ],
     socials: { twitter: 'BillBlair' },
-    keyIssues: ['national-defence', 'international-relations', 'fiscal-policy'],
+    keyIssues: [9, 4, 7],
     relatedPoliticianIds: [1, 6, 11],
     career: [
-      { year: '2023-2025', role: 'Minister of National Defence', description: '' },
-      { year: '2019-2023', role: 'Minister of Public Safety', description: 'Handled files related to policing, firearms, and border security.' },
-      { year: '2015-Present', role: 'Member of Parliament for Scarborough Southwest', description: '' },
+      { year: 2023, role: 'Minister of National Defence', description: '' },
+      { year: 2019, role: 'Minister of Public Safety', description: 'Handled files related to policing, firearms, and border security.' },
+      { year: 2015, role: 'Member of Parliament for Scarborough Southwest', description: '' },
     ],
     committeeMemberships: [],
     notableQuotes: []

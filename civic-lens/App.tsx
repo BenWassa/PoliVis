@@ -5,7 +5,7 @@ import PartiesView from './components/PartiesView';
 import IssuesView from './components/IssuesView';
 import SideNav from './components/SideNav';
 import GlobalSearchBar from './components/GlobalSearchBar';
-import { POLITICIANS_DATA, KEY_ISSUES_DATA } from './constants';
+import { POLITICIANS, KEY_ISSUES } from './constants';
 import type { Politician, KeyIssue } from './types';
 import { UsersIcon, TagIcon, MenuIcon } from './components/icons';
 import { BuildingLibraryIcon } from './components/icons';
@@ -36,8 +36,8 @@ const TabButton: React.FC<TabButtonProps> = ({ view, label, icon, activeView, on
 
 
 const App: React.FC = () => {
-  const [politicians] = useState<Politician[]>(POLITICIANS_DATA);
-  const [keyIssues] = useState<KeyIssue[]>(KEY_ISSUES_DATA);
+  const [politicians] = useState<Politician[]>(POLITICIANS);
+  const [keyIssues] = useState<KeyIssue[]>(KEY_ISSUES);
   const [selectedPoliticianId, setSelectedPoliticianId] = useState<number | null>(null);
   const [activeView, setActiveView] = useState<View>('politicians');
   const [isScrolled, setIsScrolled] = useState(false);

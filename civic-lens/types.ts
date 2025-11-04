@@ -7,13 +7,13 @@ export enum Party {
 }
 
 export interface KeyIssue {
-  id: string;
+  id: number;
   title: string;
   description: string;
 }
 
 export interface CareerEntry {
-  year: string;
+  year: number;
   role: string;
   description: string;
 }
@@ -28,7 +28,6 @@ export interface Quote {
   source: string;
 }
 
-
 export interface Politician {
   id: number;
   name: string;
@@ -42,9 +41,10 @@ export interface Politician {
     website?: string;
     twitter?: string;
   };
-  keyIssues: string[]; // Array of KeyIssue IDs
+  keyIssues: number[]; // Array of KeyIssue IDs
   relatedPoliticianIds: number[]; // Array of Politician IDs
   career: CareerEntry[];
   committeeMemberships: Committee[];
   notableQuotes: Quote[];
+  aiSummary?: string; // NEW: optional static text
 }

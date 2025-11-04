@@ -1,8 +1,8 @@
 import React, { useMemo, useState, useEffect, useRef } from 'react';
-import { GoogleGenAI } from "@google/genai";
 import type { Politician, KeyIssue } from '../types';
 import { Party } from '../types';
 import { CloseIcon, WebsiteIcon, TwitterIcon, UsersIcon, TagIcon, BriefcaseIcon, CommitteeIcon, QuoteIcon, CheckCircleIcon, SparklesIcon } from './icons';
+import { CONFIG, askGemini } from '../lib/genai';
 
 interface PoliticianDetailModalProps {
   politician: Politician;
@@ -151,19 +151,17 @@ const PoliticianDetailModal: React.FC<PoliticianDetailModalProps> = ({
   };
 
   const handleFactCheck = async () => {
+    if (!CONFIG.enableGemini) {
+      setAiSummary({ loading: false, data: politician.aiSummary ?? "No live AI summary available.", error: null });
+      return;
+    }
+
     setAiSummary({ loading: true, data: null, error: null });
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-      const prompt = `Provide a brief, up-to-date summary of the political career and key policy stances of ${politician.name}. Focus on their current role and recent activities. Present the information clearly and concisely in a single paragraph.`;
-      const response = await ai.models.generateContent({
-        model: 'gemini-2.5-flash',
-        contents: prompt,
-      });
-      setAiSummary({ loading: false, data: response.text, error: null });
-    } catch (err) {
-      console.error(err);
-      const errorMessage = err instanceof Error ? err.message : 'An unknown error occurred.';
-      setAiSummary({ loading: false, data: null, error: `Failed to fetch AI summary. ${errorMessage}` });
+      const text = await askGemini(`Summarize ${politician.name}'s recent policies.`);
+      setAiSummary({ loading: false, data: text, error: null });
+    } catch (e: any) {
+      setAiSummary({ loading: false, data: null, error: e.message });
     }
   };
 

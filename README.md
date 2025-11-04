@@ -16,7 +16,7 @@ For full documentation, setup instructions, and development guide, see:
 
 ```bash
 git clone https://github.com/BenWassa/Project-PoliVis.git
-cd Project-PoliVis/civic-lens
+cd Project-PoliVis
 npm install
 npm run dev
 ```

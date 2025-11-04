@@ -50,7 +50,7 @@ Think of it as a "Pokédex for politics"—approachable, aesthetic, and data-dri
 1. Clone the repository:
 ```bash
 git clone https://github.com/BenWassa/Project-PoliVis.git
-cd Project-PoliVis/civic-lens
+cd Project-PoliVis
 ```
 
 2. Install dependencies:
@@ -82,7 +82,6 @@ The built files will be in the `dist/` directory, ready for deployment to any st
 **Solution:** This HTML file is a Vite template that needs processing. Use the Vite dev server instead:
 
 ```bash
-cd civic-lens
 npm run dev
 ```
 
@@ -113,23 +112,36 @@ If you see "Port 3000 is already in use", either:
 ## 📁 Project Structure
 
 ```
-civic-lens/
-├── src/
-│   ├── components/     # React components
-│   ├── constants.ts    # Static data (politicians, issues)
-│   ├── types.ts        # TypeScript interfaces
-│   ├── lib/
-│   │   └── genai.ts    # AI integration stub
-│   ├── App.tsx         # Main app component
-│   └── index.tsx       # App entry point
-├── public/             # Static assets
+Project-PoliVis/
+├── components/         # React components
+│   ├── GlobalSearchBar.tsx
+│   ├── IssuesView.tsx
+│   ├── KeyIssuesCloud.tsx
+│   ├── PartiesView.tsx
+│   ├── PartySelector.tsx
+│   ├── PoliticianCard.tsx
+│   ├── PoliticianDetailModal.tsx
+│   ├── PoliticiansView.tsx
+│   ├── SearchBar.tsx
+│   ├── SideNav.tsx
+│   └── icons.tsx
+├── lib/
+│   └── genai.ts        # AI integration stub
+├── hooks/              # Custom React hooks
+├── constants.ts        # Static data (politicians, issues)
+├── types.ts            # TypeScript interfaces
+├── App.tsx             # Main app component
+├── index.tsx           # App entry point
+├── index.html          # HTML template
+├── manifest.json       # PWA manifest
+├── service-worker.js   # Service worker for PWA
 ├── package.json        # Dependencies and scripts
-└── vite.config.ts      # Build configuration
-
-documentation/          # Project documentation
-├── Vision.md          # Design philosophy and vision
-├── PoliVis setup.md   # Setup instructions
-└── README.md          # This file
+├── vite.config.ts      # Build configuration
+├── tsconfig.json       # TypeScript configuration
+└── documentation/      # Project documentation
+    ├── Vision.md       # Design philosophy and vision
+    ├── PoliVis setup.md # Setup instructions
+    └── README.md       # This file
 ```
 
 ## 🤝 Contributing

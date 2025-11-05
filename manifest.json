@@ -4,13 +4,13 @@
   "description": "A mobile-first PWA for exploring Canadian politics through clean, data-driven interfaces. Making politics personal and understandable.",
   "icons": [
     {
-      "src": "assets/icon-192.png",
+      "src": "assets/PoliVis_rounded.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "assets/icon-512.png",
+      "src": "assets/PoliVis_splash.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"

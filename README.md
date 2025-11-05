@@ -11,6 +11,7 @@ For full documentation, setup instructions, and development guide, see:
 - **[📋 README](documentation/README.md)** - Complete project documentation
 - **[🎯 Vision](documentation/Vision.md)** - Design philosophy and UX principles
 - **[⚙️ Setup Guide](documentation/PoliVis%20setup.md)** - Technical setup instructions
+- **[📦 Versioning](documentation/VERSIONING.md)** - Version management and deployment best practices
 
 ## 🚀 Quick Start
 

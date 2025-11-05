@@ -1,6 +1,6 @@
 # PoliVis
 
-[![PoliVis](https://img.shields.io/badge/PoliVis-Mobile--First-blue)](https://github.com/BenWassa/Project-PoliVis)
+[![PoliVis](https://img.shields.io/badge/PoliVis-Mobile--First-blue)](https://github.com/BenWassa/PoliVis)
 
 A mobile-first Progressive Web App for exploring Canadian politics through clean, data-driven interfaces.
 
@@ -18,16 +18,16 @@ For full documentation, setup instructions, and development guide, see:
 
 ### Windows (PowerShell/CMD)
 ```bash
-git clone https://github.com/BenWassa/Project-PoliVis.git
-cd Project-PoliVis
+git clone https://github.com/BenWassa/PoliVis.git
+cd PoliVis
 npm install
 npm run dev
 ```
 
 ### macOS/Linux
 ```bash
-git clone https://github.com/BenWassa/Project-PoliVis.git
-cd Project-PoliVis
+git clone https://github.com/BenWassa/PoliVis.git
+cd PoliVis
 npm install
 npm run dev
 ```
@@ -36,7 +36,7 @@ Then visit [http://localhost:3000](http://localhost:3000)
 
 ## 🌐 Live Demo
 
-**GitHub Pages:** [https://BenWassa.github.io/Project-PoliVis/](https://BenWassa.github.io/Project-PoliVis/)
+**GitHub Pages:** [https://BenWassa.github.io/PoliVis/](https://BenWassa.github.io/PoliVis/)
 
 *Automatically deployed from the `main` branch using GitHub Actions.*
 

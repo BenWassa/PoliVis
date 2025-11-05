@@ -62,7 +62,7 @@
 ## 🏗️ Project Structure
 
 ```
-Project-PoliVis/
+PoliVis/
 ├── App.tsx                     # Main app component
 ├── index.tsx                   # React root entry
 ├── index.html                  # HTML entry point
@@ -160,7 +160,7 @@ npm run postbuild              # Update service worker in dist/ (runs after buil
 ### `vite.config.ts`
 ```typescript
 // Key settings:
-base: '/Project-PoliVis/'      // GitHub Pages subpath
+base: '/PoliVis/'      // GitHub Pages subpath
 server.port: 3000              // Dev server port
 plugins: [react()]             // Vite React plugin
 define: {
@@ -214,10 +214,10 @@ plugins: {
 ### Platform
 - **GitHub Pages** - Static site hosting
 - **Repository:** https://github.com/BenWassa/PoliVis
-- **Live URL:** https://benwassa.github.io/Project-PoliVis/
+- **Live URL:** https://benwassa.github.io/PoliVis/
 
 ### Build Configuration for GitHub Pages
-- Base path set to `/Project-PoliVis/` in `vite.config.ts`
+- Base path set to `/PoliVis/` in `vite.config.ts`
 - Static assets in `public/` folder
 - Service worker registered with dynamic base path
 - Manifest paths are relative for portability
@@ -371,10 +371,10 @@ npm install
 ### GitHub Pages 404 Errors
 ```bash
 # Verify base path in vite.config.ts
-base: '/Project-PoliVis/'
+base: '/PoliVis/'
 
 # Check dist/index.html has correct paths
-# Should see: /Project-PoliVis/assets/...
+# Should see: /PoliVis/assets/...
 ```
 
 ---

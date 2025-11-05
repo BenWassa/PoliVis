@@ -296,7 +296,7 @@ export default function Component({ data, onAction }: ComponentProps) {
 5. Check `vite.config.ts` for base path issues
 
 ### GitHub Pages 404s
-1. Verify `base: '/Project-PoliVis/'` in `vite.config.ts`
+1. Verify `base: '/PoliVis/'` in `vite.config.ts`
 2. Check `dist/index.html` for correct asset paths
 3. Ensure static assets are in `public/` folder
 4. Verify service worker registration uses `import.meta.env.BASE_URL`
@@ -326,7 +326,7 @@ export default function Component({ data, onAction }: ComponentProps) {
 ### Successful Build
 - ✅ `npm run build` completes without errors
 - ✅ `dist/` folder contains all assets
-- ✅ `dist/index.html` has correct `/Project-PoliVis/` paths
+- ✅ `dist/index.html` has correct `/PoliVis/` paths
 - ✅ CSS bundle is small (~2-3 KB gzipped)
 - ✅ JS bundle is reasonable size (~75 KB gzipped)
 - ✅ Service worker and manifest are in `dist/`
@@ -335,7 +335,7 @@ export default function Component({ data, onAction }: ComponentProps) {
 - ✅ Changes committed with clear message
 - ✅ Pushed to GitHub without conflicts
 - ✅ GitHub Pages builds successfully
-- ✅ Site loads at https://benwassa.github.io/Project-PoliVis/
+- ✅ Site loads at https://benwassa.github.io/PoliVis/
 - ✅ No 404 errors in console
 - ✅ Service worker registers successfully
 

@@ -49,8 +49,8 @@ Think of it as a "Pokédex for politics"—approachable, aesthetic, and data-dri
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/BenWassa/Project-PoliVis.git
-cd Project-PoliVis
+git clone https://github.com/BenWassa/PoliVis.git
+cd PoliVis
 ```
 
 2. Install dependencies:
@@ -95,7 +95,7 @@ This project is configured for automatic deployment to GitHub Pages:
 2. **Automatic Deployment**: 
    - Push to `main` branch triggers automatic build and deploy
    - Built files are deployed to `gh-pages` branch
-   - Site available at: `https://BenWassa.github.io/Project-PoliVis/`
+   - Site available at: `https://BenWassa.github.io/PoliVis/`
 
 3. **Manual Deployment** (if needed):
    - Go to Actions tab → "Deploy to GitHub Pages" → "Run workflow"
@@ -176,7 +176,7 @@ If you see "Port 3000 is already in use", either:
 ## 📁 Project Structure
 
 ```
-Project-PoliVis/
+PoliVis/
 ├── components/         # React components
 │   ├── GlobalSearchBar.tsx
 │   ├── IssuesView.tsx

@@ -18,7 +18,7 @@ This guide covers the day-to-day workflows for developing and deploying PoliVis.
 
 ```bash
 # 1. Navigate to project
-cd Project-PoliVis
+cd PoliVis
 
 # 2. Start dev server
 npm run dev

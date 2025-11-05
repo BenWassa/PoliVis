@@ -188,6 +188,9 @@ const App: React.FC = () => {
         <p className="text-slate-500 text-sm">
           &copy; 2025 PoliVis • {getVersionString()} • Making politics personal and understandable
         </p>
+        <p className="text-slate-400 text-xs mt-2">
+          Photo attribution: © European Union, 1998–2025 — <a href="https://commons.wikimedia.org/w/index.php?curid=164524890" target="_blank" rel="noopener noreferrer" className="underline">Wikimedia Commons</a>
+        </p>
       </footer>
     </div>
   );

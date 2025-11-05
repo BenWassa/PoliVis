@@ -212,15 +212,25 @@ Project-PoliVis/
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
-### Development Setup
+### Development Workflow
+
+See **[WORKFLOWS.md](WORKFLOWS.md)** for complete development workflows including:
+- Starting development server
+- Making and testing changes
+- Releasing versions
+- Deploying to production
+- Troubleshooting common issues
+
+### Quick Start for Contributors
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/your-feature`
-3. Make your changes
-4. Test thoroughly
-5. Commit: `git commit -m 'Add some feature'`
-6. Push: `git push origin feature/your-feature`
-7. Open a Pull Request
+3. Start dev server: `npm run dev`
+4. Make your changes
+5. Test thoroughly: `npm run build && npm run preview`
+6. Commit: `git commit -m 'Add some feature'`
+7. Push: `git push origin feature/your-feature`
+8. Open a Pull Request
 
 ## 📄 License
 

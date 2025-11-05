@@ -5,8 +5,8 @@
  * Update this file when releasing new versions.
  */
 
-export const APP_VERSION = '1.0.3';
-export const BUILD_DATE = '2025-11-05T20:31:13.340Z';
+export const APP_VERSION = '1.0.4';
+export const BUILD_DATE = '2025-11-05T20:42:50.286Z';
 
 // Semantic versioning helper
 const [major, minor, patch] = APP_VERSION.split('.').map(Number);

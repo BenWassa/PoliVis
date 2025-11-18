@@ -75,7 +75,8 @@ export const POLITICIANS: Politician[] = [
     party: Party.Liberal,
     position: 'Prime Minister of Canada',
     termInfo: 'In office since March 14, 2025',
-    photoUrl: 'https://picsum.photos/id/1004/200/200',
+  // Use local asset placed in public/ so dev server and production will serve it at /assets/...
+  photoUrl: '/assets/politician_images/MarkCarney.webp',
     bio: 'Mark Carney became the leader of the Liberal Party in March 2025 and was sworn in as Canada’s 24th Prime Minister. His administration leads a Liberal minority government focused on affordability, fiscal discipline, defence investment and redefining Canada’s place globally.',
     policies: [
       'Announced that Budget 2025 will combine **investment in key priorities** with **spending restraint** and operational cuts. :contentReference[oaicite:0]{index=0}',

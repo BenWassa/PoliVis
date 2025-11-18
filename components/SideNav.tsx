@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { CloseIcon, DownloadIcon } from './icons';
+import { getVersionString } from '../version';
 import type { Politician, KeyIssue } from '../types';
 
 interface SideNavProps {
@@ -97,10 +98,19 @@ const SideNav: React.FC<SideNavProps> = ({ isOpen, onClose, politicians, issues 
               <span>Export Key Issues (JSON)</span>
             </button>
           </div>
+
+          {/* About / Version */}
+          <div className="mt-6 pt-4 border-t border-slate-700">
+            <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider">About</h3>
+            <p className="mt-2 text-xs text-slate-300">
+              Civic Lens Demo — a compact exploratory view of Canadian politics.
+            </p>
+            <p className="mt-2 text-xs text-slate-500">Version {getVersionString()}</p>
+          </div>
         </div>
 
         <footer className="p-4 border-t border-slate-700 text-xs text-slate-500">
-          Civic Lens Demo
+          Civic Lens Demo • {getVersionString()}
         </footer>
       </div>
     </div>
